@@ -1,0 +1,7 @@
+<h1>Your Ideas:</h1>
+
+<ul>
+	<% @user.ideas.each do |idea| %>
+		<li><%= idea.content %></li>
+	<% end %>
+</ul>
