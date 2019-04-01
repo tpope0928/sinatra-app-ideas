@@ -1,3 +1,3 @@
-class Tweet < ActiveRecord::Base
+class Idea < ActiveRecord::Base
   belongs_to  :user
 end

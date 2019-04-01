@@ -1,8 +1,8 @@
-<h1>Edit Idea</h1>
+<p><%= @idea.content %>
 
-<%= @idea.content %>
-
-<form method="POST" action="/ideas/<%= @idea.id %>">
-	<input id="hidden" type="hidden" name="_method" value="delete">
-	<input type="submit" value="Delete Project Idea">
+<form method="post" action="/ideas/<%=@idea.id%>/delete">
+  <input id="hidden" type="hidden" name="_method" value="DELETE">
+  <input type="submit" value="Delete Idea">
 </form>
+
+<a href="/ideas/<%=@idea.id%>/edit">Edit Project Idea </a>

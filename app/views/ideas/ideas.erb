@@ -1,8 +1,8 @@
-<h2>Welcome! Here is a list of Project Ideas!</h2>
+<p> Welcome <%= current_user.username %>
+<h2> Project Ideas </h2>
 
-<ul>
-	<% @ideas.each do |idea| %>
-		<li><%= idea.content %></li>
-	<% end %>
-</ul>
-<p><a href="/logout">Log Out</a></p>
+<% @ideas.each do |idea| %>
+  <div>
+    <%= idea.content %>
+  </div>
+<% end %>

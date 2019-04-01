@@ -61,7 +61,4 @@ class IdeasController < ApplicationController
   		redirect '/login'
   	end
   end
-
-
-
 end

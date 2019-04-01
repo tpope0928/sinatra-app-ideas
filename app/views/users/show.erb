@@ -1,7 +1,6 @@
-<h1>Your Ideas:</h1>
-
-<ul>
-	<% @user.ideas.each do |idea| %>
-		<li><%= idea.content %></li>
-	<% end %>
-</ul>
+<p> Here are your ideas for projects, <%= @user.username %>
+<% @user.ideas.each do |idea| %>
+  <div>
+    <%= idea.content %>
+  </div>
+<% end %>
